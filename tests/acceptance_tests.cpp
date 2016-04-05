@@ -50,7 +50,7 @@ private:
     }
 
     bool isPerformant() {
-        // Placeholder implementation for performance check
+        // Placeholder for implementation for performance check
         return true;
     }
 

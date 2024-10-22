@@ -55,13 +55,6 @@ public:
         return true;
     }
 
-    void runInstallScript() {
-        int result = std::system("./install.sh");
-        if (result != 0) {
-            std::cerr << "Error running install.sh script." << std::endl;
-        }
-    }
-
 private:
     std::string versionFile;
     std::string updateUrl;

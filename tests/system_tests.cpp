@@ -22,15 +22,8 @@ void testGUIResponsiveness() {
     std::cout << "GUI responsiveness test passed." << std::endl;
 }
 
-void testInstallScript() {
-    int result = std::system("python3 -m venv venv && source venv/bin/activate && ./install.sh && deactivate");
-    assert(result == 0);
-    std::cout << "Install script test passed." << std::endl;
-}
-
 int main() {
     testFullSystemWithActualNASAData();
     testGUIResponsiveness();
-    testInstallScript();
     return 0;
 }

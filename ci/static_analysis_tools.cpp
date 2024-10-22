@@ -28,13 +28,6 @@ public:
         file.close();
     }
 
-    void runInstallScript() {
-        int result = std::system("./install.sh");
-        if (result != 0) {
-            std::cerr << "Error running install.sh script." << std::endl;
-        }
-    }
-
 private:
     void checkLineLength(const std::string& line, int lineNumber) {
         const int maxLength = 80;
@@ -75,7 +68,6 @@ int main(int argc, char* argv[]) {
 
     StaticAnalysisTool tool;
     tool.analyzeFile(argv[1]);
-    tool.runInstallScript();
 
     return 0;
 }

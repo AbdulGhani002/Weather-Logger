@@ -50,13 +50,6 @@ public:
         return data;
     }
 
-    void runInstallScript() {
-        int result = std::system("./install.sh");
-        if (result != 0) {
-            std::cerr << "Error running install.sh script." << std::endl;
-        }
-    }
-
 private:
     std::unordered_map<std::string, std::string> database;
     std::mutex mutex;

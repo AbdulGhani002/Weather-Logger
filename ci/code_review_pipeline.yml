@@ -43,3 +43,13 @@ jobs:
       run: |
         chmod +x install.sh
         ./install.sh
+
+    - name: Run tests
+      run: |
+        chmod +x run_tests.sh
+        ./run_tests.sh
+
+    - name: Run application
+      run: |
+        chmod +x run_application.sh
+        ./run_application.sh

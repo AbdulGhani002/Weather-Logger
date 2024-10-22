@@ -53,7 +53,14 @@ To set up the project environment, follow these steps:
 
 3. Install the required dependencies:
    ```
-   # Add commands to install dependencies here
+   # Create a virtual environment
+   python3 -m venv venv
+
+   # Activate the virtual environment
+   source venv/bin/activate
+
+   # Install the required dependencies
+   pip install -r requirements.txt
    ```
 
 4. Build the project:
@@ -63,6 +70,9 @@ To set up the project environment, follow these steps:
 
 5. Run the application:
    ```
+   # Activate the virtual environment
+   source venv/bin/activate
+
    # Add commands to run the application here
    ```
 

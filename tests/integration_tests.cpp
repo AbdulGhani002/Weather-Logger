@@ -46,7 +46,7 @@ void testPerformanceUnderLoad() {
 }
 
 void testInstallScript() {
-    int result = std::system("./install.sh");
+    int result = std::system("python3 -m venv venv && source venv/bin/activate && ./install.sh && deactivate");
     assert(result == 0);
     std::cout << "Install script test passed." << std::endl;
 }

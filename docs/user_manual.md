@@ -86,7 +86,7 @@ If you encounter any issues while using the application, refer to the troublesho
 
 If you need further assistance, please contact our support team:
 
-- Email: support@weatherapp.com
-- Phone: 1-800-123-4567
+- Email: itsaghani@gmail.com
+- Phone: +923284627225
 
 Thank you for using the Weather Forecasting and Analysis Application!

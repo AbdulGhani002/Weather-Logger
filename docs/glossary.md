@@ -33,12 +33,14 @@
 
 To simplify the setup process, you can use the `install.sh` script. This script will run all tests, install necessary dependencies, build the project, and run the application. To use the script, follow these steps:
 
-1. Make the script executable:
-   ```
-   chmod +x install.sh
-   ```
+Make the script executable:
 
-2. Run the script:
-   ```
+```bash
+   chmod +x install.sh
+```
+
+Run the script:
+
+```bash
    ./install.sh
-   ```
+```

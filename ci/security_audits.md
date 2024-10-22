@@ -7,6 +7,7 @@ Regular security audits are essential to identify and mitigate vulnerabilities i
 ## Audit Schedule
 
 Security audits should be conducted at the following intervals:
+
 - Before each major release
 - Quarterly for ongoing projects
 - After any significant code changes, especially in API handling
@@ -54,4 +55,3 @@ Security audits should be conducted at the following intervals:
 ## Conclusion
 
 Regular security audits are crucial for maintaining the security and integrity of the project. By following the outlined process and best practices, we can identify and mitigate potential vulnerabilities, ensuring a secure application.
-

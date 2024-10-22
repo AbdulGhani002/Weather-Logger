@@ -5,6 +5,7 @@
 ### NASA API Client
 
 The NASA API client is responsible for querying NASA APIs and handling the responses. It includes the following features:
+
 - Custom HTTP client to query NASA APIs using C++.
 - Methods to handle large data sets without memory overflow.
 - Caching mechanisms to reduce redundant API requests.
@@ -12,6 +13,7 @@ The NASA API client is responsible for querying NASA APIs and handling the respo
 - Error handling for API failure, data corruption, or rate limits.
 
 #### Example Usage
+
 ```cpp
 #include "nasa_api_client.h"
 
@@ -28,11 +30,13 @@ int main() {
 ### Custom Database Engine
 
 The custom database engine is designed to store and retrieve weather data efficiently. It includes the following features:
+
 - Compression algorithms to reduce storage footprint.
 - Query engine for historical weather data analysis.
 - Algorithms for data interpolation, smoothing, and cleaning.
 
 #### Example Usage
+
 ```cpp
 #include "database_engine.h"
 
@@ -50,12 +54,14 @@ int main() {
 ### Image Processing
 
 The image processing module handles image loading, processing, and conversion. It includes the following features:
+
 - Custom filters (edge detection, noise reduction, etc.).
 - Algorithm for satellite image analysis (e.g., cloud cover detection, storm path prediction).
 - Machine learning algorithms for weather pattern recognition (training done offline).
 - Image compression and optimization module.
 
 #### Example Usage
+
 ```cpp
 #include "image_processing.h"
 
@@ -73,12 +79,14 @@ int main() {
 ### Forecasting Algorithms
 
 The forecasting algorithms module is responsible for calculating weather forecasts from raw data. It includes the following features:
+
 - Custom algorithms to calculate forecasts from raw data.
 - Time series analysis for historical data to improve forecast accuracy.
 - Machine learning (custom, non-library implementation) to predict extreme weather events.
 - Climate change simulation module using statistical models.
 
 #### Example Usage
+
 ```cpp
 #include "forecasting_algorithms.h"
 
@@ -96,6 +104,7 @@ int main() {
 ### GUI Rendering Engine
 
 The GUI rendering engine is responsible for creating and managing the graphical user interface. It includes the following features:
+
 - Custom GUI rendering engine in C++ (handle windows, buttons, dropdowns, etc.).
 - Interactive weather charts, graphs, and maps.
 - Modular dashboard with customizable widgets (e.g., current weather, radar maps, satellite imagery).
@@ -103,6 +112,7 @@ The GUI rendering engine is responsible for creating and managing the graphical 
 - Integration of image analysis results into the GUI (e.g., highlight storm areas on maps).
 
 #### Example Usage
+
 ```cpp
 #include "gui_rendering_engine.h"
 
@@ -122,12 +132,14 @@ int main() {
 ### Data Visualization
 
 The data visualization module is responsible for creating custom plots and visualizations. It includes the following features:
+
 - Custom plotting algorithms (bar charts, pie charts, line graphs).
 - Map-based data visualization tool.
 - Weather alert system with pop-ups and notifications.
 - Interactive timeline for historical weather data.
 
 #### Example Usage
+
 ```cpp
 #include "data_visualization.h"
 
@@ -145,10 +157,12 @@ int main() {
 ### Unit Testing
 
 Unit tests are written for every module using custom test suites (no libraries). The unit tests include:
+
 - Mock objects for NASA API to test integration without hitting the live service.
 - Edge case tests for data processing algorithms (e.g., handling corrupted data).
 
 #### Example Usage
+
 ```cpp
 #include "unit_tests.h"
 
@@ -161,10 +175,12 @@ int main() {
 ### Integration Testing
 
 Integration tests are written to verify the interaction between different modules. The integration tests include:
+
 - Tests for the interaction between GUI, backend, and API modules.
 - Performance and response time tests under load (simulating large-scale data inputs).
 
 #### Example Usage
+
 ```cpp
 #include "integration_tests.h"
 
@@ -177,10 +193,12 @@ int main() {
 ### System Testing
 
 System tests are conducted with actual NASA data to ensure accurate weather forecasts. The system tests include:
+
 - Full system tests with actual NASA data.
 - GUI responsiveness tests under real-time updates and image analysis tasks.
 
 #### Example Usage
+
 ```cpp
 #include "system_tests.h"
 
@@ -193,10 +211,12 @@ int main() {
 ### Acceptance Testing
 
 Acceptance tests are conducted against real-world user scenarios to ensure compliance with project goals. The acceptance tests include:
+
 - Tests against real-world user scenarios (forecast checking, weather alerts, etc.).
 - Ensuring compliance with project goals (accuracy, performance, usability).
 
 #### Example Usage
+
 ```cpp
 #include "acceptance_tests.h"
 
@@ -210,12 +230,14 @@ int main() {
 
 To simplify the setup process, you can use the `install.sh` script. This script will run all tests, install necessary dependencies, build the project, and run the application. To use the script, follow these steps:
 
-1. Make the script executable:
-   ```
-   chmod +x install.sh
-   ```
+Make the script executable:
 
-2. Run the script:
-   ```
+```bash
+   chmod +x install.sh
+```
+
+Run the script:
+
+```bash
    ./install.sh
-   ```
+```

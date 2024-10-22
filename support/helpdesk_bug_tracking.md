@@ -66,3 +66,17 @@ This document outlines the setup and usage of the helpdesk and bug-tracking syst
 ## Conclusion
 
 Setting up an effective helpdesk and bug-tracking system is crucial for managing user support requests and tracking bugs in the Weather Forecasting and Analysis Project. By following the outlined setup and usage guidelines, the team can ensure efficient issue resolution and maintain a high level of user satisfaction.
+
+## Using the install.sh Script
+
+To simplify the setup process, you can use the `install.sh` script. This script will run all tests, install necessary dependencies, build the project, and run the application. To use the script, follow these steps:
+
+1. Make the script executable:
+   ```
+   chmod +x install.sh
+   ```
+
+2. Run the script:
+   ```
+   ./install.sh
+   ```

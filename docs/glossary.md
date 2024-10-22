@@ -28,3 +28,17 @@
 - **Static Analysis Tools**: Tools that analyze code for potential errors and vulnerabilities without executing the program.
 - **Telemetry**: The process of recording and transmitting the readings of an instrument.
 - **Unit Testing**: A type of software testing where individual units or components of a software are tested.
+
+## Using the install.sh Script
+
+To simplify the setup process, you can use the `install.sh` script. This script will run all tests, install necessary dependencies, build the project, and run the application. To use the script, follow these steps:
+
+1. Make the script executable:
+   ```
+   chmod +x install.sh
+   ```
+
+2. Run the script:
+   ```
+   ./install.sh
+   ```

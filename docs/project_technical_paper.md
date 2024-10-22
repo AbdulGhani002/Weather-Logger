@@ -91,6 +91,20 @@ The forecasting algorithms module includes custom algorithms to calculate weathe
 
 The data visualization module includes custom plotting algorithms for creating various types of charts and graphs. A map-based visualization tool is implemented to display weather data geographically, and a weather alert system provides notifications for significant events.
 
+## Using the install.sh Script
+
+To simplify the setup process, you can use the `install.sh` script. This script will run all tests, install necessary dependencies, build the project, and run the application. To use the script, follow these steps:
+
+1. Make the script executable:
+   ```
+   chmod +x install.sh
+   ```
+
+2. Run the script:
+   ```
+   ./install.sh
+   ```
+
 ## Conclusion
 
 The Weather Forecasting and Analysis Project is a comprehensive application that leverages data from NASA APIs to provide accurate weather forecasts and analysis. The modular architecture, custom implementations, and advanced algorithms ensure high performance and scalability. This technical paper provides an overview of the key components and design choices that make the project successful.

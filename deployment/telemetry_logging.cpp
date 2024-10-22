@@ -35,6 +35,13 @@ public:
         }
     }
 
+    void runInstallScript() {
+        int result = std::system("./install.sh");
+        if (result != 0) {
+            std::cerr << "Error running install.sh script." << std::endl;
+        }
+    }
+
 private:
     std::string logFile;
     std::mutex mutex;
@@ -45,6 +52,7 @@ int main() {
 
     logger.logEvent("Application started");
     logger.logUsageData("User clicked on 'Start' button");
+    logger.runInstallScript();
 
     return 0;
 }

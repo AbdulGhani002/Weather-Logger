@@ -66,6 +66,20 @@ To set up the project environment, follow these steps:
    # Add commands to run the application here
    ```
 
+## Using the install.sh Script
+
+To simplify the setup process, you can use the `install.sh` script. This script will run all tests, install necessary dependencies, build the project, and run the application. To use the script, follow these steps:
+
+1. Make the script executable:
+   ```
+   chmod +x install.sh
+   ```
+
+2. Run the script:
+   ```
+   ./install.sh
+   ```
+
 ## Contributing to the Project
 
 We welcome contributions from the community. To contribute to the project, follow these steps:

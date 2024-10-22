@@ -40,6 +40,13 @@ public:
         return simulationResults;
     }
 
+    void runInstallScript() {
+        int result = std::system("./install.sh");
+        if (result != 0) {
+            std::cerr << "Error running install.sh script." << std::endl;
+        }
+    }
+
 private:
     double customForecastAlgorithm(double data) {
         // Implement custom forecast algorithm here

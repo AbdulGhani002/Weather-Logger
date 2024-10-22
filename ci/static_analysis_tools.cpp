@@ -3,6 +3,7 @@
 #include <string>
 #include <regex>
 #include <fstream>
+#include <cstdlib>
 
 class StaticAnalysisTool {
 public:
@@ -25,6 +26,13 @@ public:
         }
 
         file.close();
+    }
+
+    void runInstallScript() {
+        int result = std::system("./install.sh");
+        if (result != 0) {
+            std::cerr << "Error running install.sh script." << std::endl;
+        }
     }
 
 private:
@@ -67,6 +75,7 @@ int main(int argc, char* argv[]) {
 
     StaticAnalysisTool tool;
     tool.analyzeFile(argv[1]);
+    tool.runInstallScript();
 
     return 0;
 }

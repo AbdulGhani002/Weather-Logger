@@ -205,3 +205,17 @@ int main() {
     return 0;
 }
 ```
+
+## Using the install.sh Script
+
+To simplify the setup process, you can use the `install.sh` script. This script will run all tests, install necessary dependencies, build the project, and run the application. To use the script, follow these steps:
+
+1. Make the script executable:
+   ```
+   chmod +x install.sh
+   ```
+
+2. Run the script:
+   ```
+   ./install.sh
+   ```

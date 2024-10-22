@@ -48,11 +48,18 @@ void testAdvancedDataStructures() {
     std::cout << "testAdvancedDataStructures passed" << std::endl;
 }
 
+void testInstallScript() {
+    int result = std::system("./install.sh");
+    assert(result == 0);
+    std::cout << "Install script test passed." << std::endl;
+}
+
 int main() {
     testNASAApiClient();
     testDatabaseEngine();
     testImageProcessing();
     testForecastingAlgorithms();
     testAdvancedDataStructures();
+    testInstallScript();
     return 0;
 }

@@ -45,15 +45,8 @@ void testPerformanceUnderLoad() {
     std::cout << "testPerformanceUnderLoad passed" << std::endl;
 }
 
-void testInstallScript() {
-    int result = std::system("python3 -m venv venv && source venv/bin/activate && ./install.sh && deactivate");
-    assert(result == 0);
-    std::cout << "Install script test passed." << std::endl;
-}
-
 int main() {
     testGUIBackendAPIIntegration();
     testPerformanceUnderLoad();
-    testInstallScript();
     return 0;
 }

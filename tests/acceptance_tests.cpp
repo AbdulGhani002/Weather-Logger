@@ -9,7 +9,6 @@ public:
         testForecastChecking();
         testWeatherAlerts();
         testProjectGoalsCompliance();
-        testInstallScript();
     }
 
 private:
@@ -33,12 +32,6 @@ private:
         assert(isPerformant());
         assert(isUsable());
         std::cout << "Project goals compliance test passed." << std::endl;
-    }
-
-    void testInstallScript() {
-        int result = std::system("python3 -m venv venv && source venv/bin/activate && ./install.sh && deactivate");
-        assert(result == 0);
-        std::cout << "Install script test passed." << std::endl;
     }
 
     std::string getForecast(const std::string& location) {

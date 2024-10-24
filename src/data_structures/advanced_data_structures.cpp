@@ -150,7 +150,6 @@ public:
     }
 
 private:
-    std::unordered_map<std::pair<double, double>, int, pair_hash> index;
 
     struct pair_hash {
         template <class T1, class T2>
@@ -160,6 +159,8 @@ private:
             return hash1 ^ hash2;
         }
     };
+    
+    std::unordered_map<std::pair<double, double>, int, pair_hash> index;
 };
 
 class DataSorter {

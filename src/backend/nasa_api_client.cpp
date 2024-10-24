@@ -4,6 +4,7 @@
 #include <thread>
 #include <mutex>
 #include <curl/curl.h>
+#include <unordered_map>
 
 class NASAApiClient {
 public:
